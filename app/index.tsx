@@ -1,18 +1,27 @@
 import React from 'react';
-import { LinearGradient } from "expo-linear-gradient";
-import { Text, View } from "react-native";
+import { StyleSheet, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
-export default function Index() {
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <LinearGradient colors={['#808080', '#000000']}
-      style={{flex:1}}></LinearGradient>
+    <View style={styles.container}>
+      <LinearGradient
+        colors={['#111428', '#000000']} // Grey to Black
+        style={styles.background}
+        dither={true}
+        locations={[0.2,0.8]}
+      />
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  background: {
+    flex: 1,
+  },
+});
+
+export default App;
