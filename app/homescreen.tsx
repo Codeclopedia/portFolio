@@ -77,7 +77,7 @@ export default function HomeScreen({ navigation }: any) {
       <LinearGradient colors={['#111428', '#000000']} style={styles.background} dither={true} locations={[0.2, 0.8]}>
         <View style={styles.container}>
 
-          {/* List of Boxes */}
+         
           <View style={styles.boxContainer}>
             {data.map((item) => (
               renderItem({ item })
@@ -100,7 +100,7 @@ export default function HomeScreen({ navigation }: any) {
           )}
 
 
-          {/* Spacer */}
+       
           <View style={{ flex: 1 }} />
           <LottieView
             source={require("../assets/lottie/developer.json")}

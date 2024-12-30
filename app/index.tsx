@@ -6,7 +6,7 @@ import StackNavigator from './stackNavigator'; // Import the StackNavigator
 const App = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <StackNavigator /> {/* Use StackNavigator for navigation */}
+      <StackNavigator />
     </SafeAreaView>
   );
 };

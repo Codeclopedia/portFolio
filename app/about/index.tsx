@@ -4,10 +4,6 @@ import { ScrollView, StyleSheet, View, Text, Image } from 'react-native';
 export default function AboutPage() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      {/* <Image 
-        source={{ uri: 'https://via.placeholder.com/150' }} // Replace with your profile picture URL
-        style={styles.profileImage}
-      /> */}
       
       <Text style={styles.name}>Chetan Joshi</Text>
       <Text style={styles.title}>Software Developer</Text>
